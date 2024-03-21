@@ -1,0 +1,42 @@
+//
+Code Crtique:
+When receiving this code, it was clear that it was well designed to a point. The controller and its
+interface are well designed and concise. They do not seem to have any wasted code and were able to
+create a functional controller in under 500 lines, which made our understanding of their intentions
+very clear. Their interfaces allowed for our implementation of mosaic to be simple as they only
+had one interface for the model and their controller. It was well documented and easy to implement.
+They documented everything and were explicit on how each interface, class and method were utilized
+in the code. Their use of the MVC model is strong and allowed for essential methods to be separated
+based on certain tasks. Their controller methods only work and implement methods from the model,
+while the model holds all the operations and their functionality, and the view set up the script
+and GUI to interact with the user.
+
+In their image class that implements the IImage interface has some points where there are places to
+abstract functions like blur/sharpen and sepia/greyscale. They did not utilize helper methods that
+could have been helpful when working with kernels and filters that would have made adding other
+features easier. However, their Image interface and implementation were simple enough to understand
+and troubleshoot through when we were finding other issues. However, their main class runs GUI and
+the script is split up into two classes under their main. They could unite these two classes and
+have if statements to decide what the exact main the user is intending, either the GUI or the
+script. There is no need to have 2 different main methods when they are both just running the
+specified program.
+
+There were some issues when implementing mosaic and running their program though, when running their
+GUI and the ImageProccessorView there were no error signs for the user when there was an invalid
+input. Instead of telling the user to put in a valid input, instead there were just errors on the
+console and the program needed to be run again. Also, with the brighten button on the GUI, there
+was no functionality as the user had no opportunity to input a brighten component. We did add that
+feature to the code as we had to do it as well for the mosaic functionality. It also seems that
+their blur and sharpen does not work for the GUI, as when either button is clicked it yields no
+result. All the other buttons do work including load and save which is good. Their histogram also
+is very quick to update, meaning they did an efficient way of coding the histogram.  We did not
+request these changes from them but adding these functionalities would improve the code.
+
+Their overall layout is simple and easy to follow. There is one functionality that would be helpful
+if it was included. In the console there is an ability to be working on different images at a time
+and having the user to pick and choose which image they wish to edit after loading. A menu screen
+of loaded images might be nice to include and allow the user to choose from. Also, there is no way
+to revert to the original image loaded, once you place an operation on the image there is no way of
+going back and placing another operation, besides flip horizontally/flip vertically. If a user
+changes their mind about how they want to edit their image, they must reload it and try again.
+Having a back button would eliminate this problem.

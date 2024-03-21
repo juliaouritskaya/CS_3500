@@ -1,0 +1,49 @@
+load res/color.ppm color
+sharpen color color-try-one
+save res/color-try-one.ppm color-try-one
+exit
+
+load res/color.ppm color
+blur color color-try-two
+save res/color-try-two.ppm color-try-two
+exit
+
+load res/color.ppm color
+sepia color color-try-three
+save res/color-try-three.ppm color-try-three
+exit
+
+load res/color.ppm color
+greyscale color color-try-four
+save res/color-try-four.ppm color-try-four
+exit
+
+load res/color.ppm color
+brighten 50 color color-bb"
+save res/color-bb.ppm color-bb
+exit
+
+load res/color.ppm color
+darken -50 color color-db"
+save res/color-db.ppm color-db
+exit
+
+load res/sun.ppm sun
+vertical-flip sun sun-vv
+save res/sun-vv.ppm sun-vv
+exit
+
+load res/sun.ppm sun
+horizontal-flip sun sun-hh
+save res/sun-hh.ppm sun-hh
+exit
+
+load res/sun.ppm sun
+value-component sun sun-greyscale
+save res/sun-greyscale.ppm sun-greyscale
+exit
+
+load res/apple.jpeg apple
+mosaic 100 apple apple-100
+save res/apple-100.jpeg apple-100
+exit

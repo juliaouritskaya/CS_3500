@@ -1,0 +1,127 @@
+//
+Assignment 7: Edited by Julia Ouritskaya and Evelyn Robert
+
+MOSAIC:
+We were successful in implementing a Mosaic feature that can be used through the script, gui and
+the jar file.
+Script for the mosaic functionality:
+mosaic num-seeds source-image-name dest-image-name
+We implemented this succesfully by adding a method in the Image class that loops through every
+pixel, finds the seed amount of random pixels and creates seeds and places each pixel to its closest
+seed and takes an average of all the pixel's color in each seed.
+It is also fully implemented in the GUI with a button and pop-up screen for the seed amount.
+
+CITATION FOR MOSAIC IMAGES:
+apple: https://www.google.com/url?sa=i&url=https%3A%2F%2Fillustoon.com%2F%3Fid%3D7166&psig=AOvVaw3nUZ2L9jf5shBcn1WTiC2V&ust=1668301739684000&source=images&cd=vfe&ved=0CA8QjRxqFwoTCLCE4Le6p_sCFQAAAAAdAAAAABAS
+
+
+PIXEL CLASS:
+This class represents the pixel of an image
+VARIABLES
+red variable represents the red value of the pixel
+green variable represents the green value of the pixel
+blue variable represents the blue value of the pixel
+METHODS
+brighten: the purpose of this method is to brighten the pixel; this is done by adding a value to the current values of red, green, and blue
+greyscale: the purpose of this method is to convert it to greyscale; this is done by
+if the parameter is red, it sets the green and blue values to the red value
+if the parameter is green, it sets the red and blue values to the green value
+if the parameter is blue, it sets the red and green values to the blue value
+if the parameter is value, it sets the red, green, and blue value to whatever the maximum is
+if the parameter is intensity, it sets the red, green, and blue value to whatever the average of the three is
+if the parameter is luma, it sets the red, green, and blue value to whatever 0.2126*red + 0.7152*green + 0.0722*blue is
+getRed: the purpose of this method is that it returns the red value
+setRed: the purpose of this method is setting the red to a new value
+getGreen: the purpose of this method is to return the green value
+setGreen: the purpose of this method is setting the green to a new value
+getBlue: the purpose of this method is that it returns the blue value
+setBlue: the purpose of this method is setting the blue to a new value
+
+IMAGE CLASS
+it represents the image
+VARIABLES
+width represents the width of the image
+height represents the height of the image
+the maxValue represents the maximum value of a pixel component
+pixels represents a two-dimensional array that contains the pixel objects that make up the image
+
+METHODS
+save method creates a ppm file containing the width, the height, and the maxValue, and the red, green, and blue values of the pixels on your local computer
+brighten method loops through every pixel of the image and brightens the pixel
+flipVertically loops through every pixel and swaps pixels from the top to the bottom
+flipHorizontally loops through every pixel and swaps pixels from the left side to right side’
+greyscale loops through every pixel and calls the greyscale method on every pixel
+sepia loops through every pixel and applys the filtering color transformation on every pixel
+greyscale (second) loops through every pixel, compares, and assigns max value and calls the
+greyscale method.
+blur loops through every pixel, and applys blurring filter to every pixel
+sharpen loops through every pixel and applys sharpening filter to every pixel
+IMAGEPROCESSOR CLASS
+represents the controller; purpose of this is to read the commands from the user and call the appropriate methods based on the users input
+VARIABLES
+images is a hash map of images where the name is the key and image object is the value
+METHODS
+loadImage loads the image from the computer and adds it to the hash map
+save image gets the image from the hash map and saves the image to the computer
+brighten image gets the image from the hash map and brightens that image
+flipVert gets the image from the hash map and flips it vertically
+flipHor gets the image from the hash map and flips it horizontally
+greyscale gets the image from the hash map and converts it to greyscale
+parseCommand prompts the user to enter a command and executes the appropriate method based on that command
+greyscale (second) gets image from a hash map and converts to greyscale
+sepiaImage gets image from a hash map and converts to sepia
+blurImage gets image from a hash map and blurs that image
+sharpenImage gets image from a hash map and sharpens that image
+IMAGEPROCESSORVIEW CLASS
+represents the textview of the program: purpose is to be able to run the program on the console
+VARIABLES
+- image processor is the controller
+
+METHODS
+run runs the program
+readCommands gets fileName from parameter and reads the file commands
+
+ImageProcessorGUI CLASS
+represents the user interface of the program: purpose is to be able to display the user interface
+to the user.
+VARIABLES
+- chartHeight represents the height of the chart
+- filtersPanel represents the JPanel for all of the filters features
+- imagePanel represents the image preview
+- loadSavePanel represents the left panel on the GUI for load and save features
+- chartPanel represents the histogram chart Jpanel in the bottom of the GUI
+- saveFileType represents the file type
+- loadButton represents the button for load
+- saveButton represents the buttom for saving
+- sepiaButton represents the button to make the image sepia
+- greyscaleButton represents the button to make the image greyscale
+- horizontalFlipButton represents the button to flip the image horizontally
+- verticalFlipButton represents the button to flip the image vertically
+- brightenButton represents the button to make the image brighter
+- blurButton represents the button to make the image blurred
+- sharpenButton represents the button to make the image sharpened
+- redComponentButton represents the button to use the redComponent feature on the image.
+- greenComponentButton represents the button to use the redComponent feature on the image.
+- blueComponentButton represents the button to use the blueComponent feature on the image.
+- valueComponentButton represents the button to use the valueComponent feature on the image.
+- intensityComponentButton represents the button to use
+- the intensityComponent feature on the image.
+- lumaComponentButton represents the button to use the redComponent feature on the image.
+- scrollPane represents the pane for scrolling
+- imageLabel represents the title of the image.
+
+
+METHODS:
+actionPerformed performs a feature based on the ActionEvent of a user.
+updateImageAndChart refreshes the image and chart in the GUI
+displayImage displays the image that was loaded
+displayChart displays the histogram in the GUI
+drawLine displays lines for the bar of the histogram.
+
+
+
+CITATION FOR IMAGEs USED AND CONVERTED WITH GIMP:
+“Sun Cliparts #277660.” ClipArt Library, http://clipart-library.com/clipart/48066.htm. Accessed 2 Nov. 2022.
+Ohader. “Four Pixels.” Pixilart.com, https://www.pixilart.com/art/four-pixels-0374a63c9e03567. Accessed 3 Nov. 2022.
+www.topedge.com/panels/aircraft/hangar/jpeg/f14/nf14-1.jpg.
+

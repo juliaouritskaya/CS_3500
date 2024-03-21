@@ -1,0 +1,141 @@
+//
+LIST OF GUI Commands TO RUN
+- Note: make sure image files are of type: jpeg, jpg, ppm, png, bmp
+
+To flip the file vertically:
+- Run ImageProcessorGUI main method.
+- Press load button and make sure File Format selects All Files.
+- In the directory/finder, choose an image file.
+- Press the verticalFlip button.
+- Press the save button.
+- Name file, choose file format, and directory location.
+- Exit GUI.
+
+
+
+To flip the file horizontally:
+- Run ImageProcessorGUI main method.
+- Press load button and make sure File Format selects All Files.
+- In the directory/finder, choose an image file.
+- Press the horizontalFlip button.
+- Press the save button.
+- Name file, choose file format, and directory location.
+- Exit GUI.
+
+
+
+To brighten the file:
+- Run ImageProcessorGUI main method.
+- Press load button and make sure File Format selects All Files.
+- In the directory/finder, choose an image file.
+- Press the brighten button.
+- Press the save button.
+- Name file, choose file format, and directory location.
+- Exit GUI.
+
+
+To greyscale the file:
+- Run ImageProcessorGUI main method.
+- Press load button and make sure File Format selects All Files.
+- In the directory/finder, choose an image file.
+- Press the greyscale button.
+- Press the save button.
+- Name file, choose file format, and directory location.
+- Exit GUI.
+
+
+To sharpen the file:
+- Run ImageProcessorGUI main method.
+- Press load button and make sure File Format selects All Files.
+- In the directory/finder, choose an image file.
+- Press the sharpen button.
+- Press the save button.
+- Name file, choose file format, and directory location.
+- Exit GUI.
+
+
+To blur the file:
+- Run ImageProcessorGUI main method.
+- Press load button and make sure File Format selects All Files.
+- In the directory/finder, choose an image file.
+- Press the blur button.
+- Press the save button.
+- Name file, choose file format, and directory location.
+- Exit GUI.
+
+
+To sepia the file:
+- Run ImageProcessorGUI main method.
+- Press load button and make sure File Format selects All Files.
+- In the directory/finder, choose an image file.
+- Press the sepia button.
+- Press the save button.
+- Name file, choose file format, and directory location.
+- Exit GUI.
+
+To perform redComponent operation on file:
+- Run ImageProcessorGUI main method.
+- Press load button and make sure File Format selects All Files.
+- In the directory/finder, choose an image file.
+- Press the redComponent button.
+- Press the save button.
+- Name file, choose file format, and directory location.
+- Exit GUI.
+
+To perform greenComponent operation on file:
+- Run ImageProcessorGUI main method.
+- Press load button and make sure File Format selects All Files.
+- In the directory/finder, choose an image file.
+- Press the greenComponent button.
+- Press the save button.
+- Name file, choose file format, and directory location.
+- Exit GUI.
+
+To perform blueComponent operation on file:
+- Run ImageProcessorGUI main method.
+- Press load button and make sure File Format selects All Files.
+- In the directory/finder, choose an image file.
+- Press the blueComponent button.
+- Press the save button.
+- Name file, choose file format, and directory location.
+- Exit GUI.
+
+To perform valueComponent operation on file:
+- Run ImageProcessorGUI main method.
+- Press load button and make sure File Format selects All Files.
+- In the directory/finder, choose an image file.
+- Press the valueComponent button.
+- Press the save button.
+- Name file, choose file format, and directory location.
+- Exit GUI.
+
+To perform intensityComponent operation on file:
+- Run ImageProcessorGUI main method.
+- Press load button and make sure File Format selects All Files.
+- In the directory/finder, choose an image file.
+- Press the intensityComponent button.
+- Press the save button.
+- Name file, choose file format, and directory location.
+- Exit GUI.
+
+To perform lumaComponent operation on file:
+- Run ImageProcessorGUI main method.
+- Press load button and make sure File Format selects All Files.
+- In the directory/finder, choose an image file.
+- Press the lumaComponent button.
+- Press the save button.
+- Name file, choose file format, and directory location.
+- Exit GUI.
+
+
+To perform lumaComponent operation on file:
+- Run ImageProcessorGUI main method.
+- Press load button and make sure File Format selects All Files.
+- In the directory/finder, choose an image file.
+- Press the mosaic button.
+- Enter in the desired seed amount.
+- Press the save button.
+- Name file, choose file format, and directory location.
+- Exit GUI.
+
+
