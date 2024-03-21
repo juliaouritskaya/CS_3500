@@ -1,0 +1,27 @@
+load ny.ppm ny
+red-component ny nyRED
+save nyRED.ppm nyRED
+green-component ny nyGREEN
+save nyGREEN.ppm nyGREEN
+blue-component ny nyBLUE
+save nyBLUE.ppm nyBLUE
+intensity ny nyINTENSITY
+save nyINTENSITY.ppm nyINTENSITY
+luma ny nyLUMA
+save nyLUMA.ppm nyLUMA
+value ny nyVALUE
+save nyVALUE.ppm nyVALUE
+horizontal-flip ny nyHORIZONTAL
+save nyHORIZONTAL.ppm nyHORIZONTAL
+vertical-flip ny nyVERTICAL
+save nyVERTICAL.ppm nyVERTICAL
+brighten 10 ny nyBRIGHT
+save nyBRIGHT.ppm nyBRIGHT
+sepia ny nySEPIA
+save nySEPIA.ppm nySEPIA
+greyscale ny nyGREYSCALE
+save nyGREYSCALE.ppm nyGREYSCALE
+sharpen ny nySHARPEN
+save nySHARPEN.ppm nySHARPEN
+blur ny nyBLUR
+save nyBLUR.ppm nyBLUR
